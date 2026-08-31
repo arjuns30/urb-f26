@@ -12,36 +12,32 @@
     Preview by opening this file in a browser.
     ============================================================
 
-    PHOTO PLACEHOLDERS
-    Every image slot is currently a dashed rectangle labeled PHOTO A / B / C / D / E.
-    Each one has a comment directly above it with the exact <img> tag to paste in.
-    Just swap YOURUSER / REPO for your GitHub Pages values.
-
-    HOSTING FOR GMAIL
-    Gmail cannot load local files. Every image needs a public https:// URL.
-      1. Create a public repo, e.g. urb-rush-email
-      2. Put images in /assets
-      3. Settings -> Pages -> Deploy from branch: main / (root)
-      4. URLs become https://YOURUSER.github.io/urb-rush-email/assets/hero.jpg
-    Avoid Google Drive (blocks hotlinking) and raw.githubusercontent.com
-    (often served as a download rather than an image).
-
-    IMAGE SIZES
-    Export at 2x the display width so they stay sharp on retina screens.
+    SEND CHECKLIST
+    1. Images use jsDelivr https:// URLs. They only work after the assets
+       are pushed to arjuns30/urb-f26 on GitHub.
+    2. Do NOT paste this file into Gmail compose — Gmail strips <style>
+       and media queries, which wrecks mobile. Send through Mailchimp,
+       Mailjet, Brevo, or an HTML-email Chrome extension.
+    3. Send a test to Gmail (iPhone + desktop) and Outlook before the blast.
+    Avoid Google Drive and raw.githubusercontent.com for image hosting.
     ============================================================
   -->
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-    @media screen and (max-width: 620px) {
-      .container { width: 100% !important; }
-      .pad { padding-left: 20px !important; padding-right: 20px !important; }
-      .stack { display: block !important; width: 100% !important; box-sizing: border-box !important; }
-      .spacer { display: none !important; }
-      .wordmark { font-size: 32px !important; line-height: 38px !important; letter-spacing: 1px !important; }
-      .mystery { font-size: 19px !important; line-height: 26px !important; }
-      .h2 { font-size: 24px !important; line-height: 30px !important; }
-      .datebox { width: 92px !important; }
+    img { max-width: 100% !important; height: auto !important; }
+    @media only screen and (max-width: 600px) {
+      .container { width: 100% !important; max-width: 100% !important; }
+      .pad { padding-left: 16px !important; padding-right: 16px !important; }
+      .stack { display: block !important; width: 100% !important; box-sizing: border-box !important; padding-left: 0 !important; padding-right: 0 !important; padding-bottom: 12px !important; }
+      .spacer { display: none !important; height: 0 !important; width: 0 !important; }
+      .wordmark { font-size: 22px !important; line-height: 26px !important; letter-spacing: 0.5px !important; white-space: normal !important; }
+      .mystery { font-size: 18px !important; line-height: 24px !important; }
+      .h2 { font-size: 22px !important; line-height: 28px !important; }
+      .datebox { width: 72px !important; }
       .cta a { display: block !important; }
+      .detective { width: 36px !important; margin: 8px auto 0 auto !important; }
+      .mag { width: 36px !important; }
+      .title-split td { display: block !important; width: 100% !important; text-align: center !important; padding: 0 !important; }
     }
   </style>
   <!--[if mso]>
@@ -58,36 +54,40 @@
 
   <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#140d0c;">
     <tr>
-      <td align="center" style="padding:24px 10px 32px 10px;">
+      <td align="center" style="padding:16px 8px 24px 8px;">
 
-        <table role="presentation" class="container" width="600" cellspacing="0" cellpadding="0" border="0"
-               style="width:600px; max-width:600px; background:#8f1d15; border-collapse:separate; border-spacing:0;">
+        <!--[if mso]>
+        <table role="presentation" width="560" cellspacing="0" cellpadding="0" border="0"><tr><td>
+        <![endif]-->
+        <table role="presentation" class="container" width="560" cellspacing="0" cellpadding="0" border="0"
+               style="width:100%; max-width:560px; background:#8f1d15; border-collapse:separate; border-spacing:0;">
 
           <!-- ============ TITLE CARD ============ -->
           <tr>
             <td style="background:#171310; padding:0;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
                 <tr>
-                  <td class="pad" align="center" style="padding:34px 40px 30px 40px; border-bottom:1px solid #3a2f28;">
+                  <td class="pad" align="center" style="padding:28px 24px 24px 24px; border-bottom:1px solid #3a2f28;">
 
                     <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:11px; line-height:16px; font-weight:600; letter-spacing:3px; color:#c9a227; text-transform:uppercase;">
-                      Case File No. F26
+                      Case File: URBF26
                     </div>
 
-                    <div class="wordmark" style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:42px; line-height:48px; font-weight:800; letter-spacing:1.5px; color:#ffffff; margin-top:12px;">
-                      URB CONSULTING
-                    </div>
-
-                    <!-- gold rule with center diamond -->
-                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:16px;">
+                    <table role="presentation" class="title-split" cellspacing="0" cellpadding="0" border="0" align="center" style="margin-top:12px;">
                       <tr>
-                        <td width="70" style="width:70px; height:1px; background:#c9a227; font-size:0; line-height:0;">&nbsp;</td>
-                        <td style="padding:0 10px; font-family:Georgia,serif; font-size:12px; line-height:12px; color:#c9a227;">&#9670;</td>
-                        <td width="70" style="width:70px; height:1px; background:#c9a227; font-size:0; line-height:0;">&nbsp;</td>
+                        <td valign="middle" align="right" style="padding:0 8px 0 0;">
+                          <div class="wordmark" style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:32px; line-height:38px; font-weight:800; letter-spacing:1px; color:#ffffff;">
+                            URB CONSULTING
+                          </div>
+                        </td>
+                        <td valign="middle" align="left" style="padding:0;">
+                          <img class="detective" src="https://cdn.jsdelivr.net/gh/arjuns30/urb-f26@main/assets/detective-email.png" width="48" alt=""
+                               style="display:block; width:48px; height:auto; border:0;">
+                        </td>
                       </tr>
                     </table>
 
-                    <div class="mystery serif" style="font-family:Georgia,'Times New Roman',serif; font-size:24px; line-height:32px; font-style:italic; color:#f4e3a1; margin-top:16px;">
+                    <div class="mystery serif" style="font-family:Georgia,'Times New Roman',serif; font-size:24px; line-height:32px; font-style:italic; color:#f4e3a1; margin-top:14px;">
                       Rush: Solve the Mystery
                     </div>
 
@@ -103,16 +103,16 @@
 
           <!-- ============ SECTOR STRIP ============ -->
           <tr>
-            <td class="pad" align="center" style="background:#171310; padding:14px 40px 16px 40px;">
+            <td class="pad" align="center" style="background:#171310; padding:12px 24px 14px 24px;">
               <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:11px; line-height:18px; font-weight:600; letter-spacing:2.2px; color:#e8ded2; text-transform:uppercase;">
-                Mobility &nbsp;·&nbsp; Real Estate &nbsp;·&nbsp; Energy &nbsp;·&nbsp; Policy &amp; Data
+                Project Experience &nbsp;·&nbsp; Community &nbsp;·&nbsp; Professional Development &nbsp;
               </div>
             </td>
           </tr>
 
           <!-- ============ HERO PHOTO (on the red wall) ============ -->
           <tr>
-            <td class="pad" style="background:#8f1d15; padding:28px 28px 6px 28px;">
+            <td class="pad" style="background:#8f1d15; padding:22px 22px 6px 22px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
                      style="width:100%; background:#c9a227;">
                 <tr>
@@ -120,25 +120,8 @@
                     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#171310;">
                       <tr>
                         <td style="padding:4px; font-size:0; line-height:0;">
-
-                          <!-- PHOTO A · hero · display 526px wide · export 1052x580
-                               REPLACE the <td> below with:
-                               <img src="https://YOURUSER.github.io/REPO/assets/hero.jpg" width="526" alt="URB Consulting members"
-                                    style="display:block; width:100%; max-width:526px; height:auto; border:0;">
-                          -->
-                          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
-                            <tr>
-                              <td height="250" align="center" valign="middle" style="height:250px; background:#efe7d8; border:2px dashed #b9a06a;">
-                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:12px; line-height:18px; font-weight:600; letter-spacing:2px; color:#8a7440; text-transform:uppercase;">
-                                  Photo A · Hero
-                                </div>
-                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:11px; line-height:16px; color:#a89468; margin-top:4px;">
-                                  1052 × 580 · full club or project team shot
-                                </div>
-                              </td>
-                            </tr>
-                          </table>
-
+                          <img src="https://cdn.jsdelivr.net/gh/arjuns30/urb-f26@main/assets/hero.jpg" width="494" alt="URB Consulting members"
+                               style="display:block; width:100%; max-width:100%; height:auto; border:0;">
                         </td>
                       </tr>
                     </table>
@@ -150,10 +133,10 @@
 
           <!-- ============ INTRO CARD ============ -->
           <tr>
-            <td class="pad" style="background:#8f1d15; padding:22px 28px 8px 28px;">
+            <td class="pad" style="background:#8f1d15; padding:18px 22px 8px 22px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#f6f1e7;">
                 <tr>
-                  <td class="pad" style="padding:32px 32px 30px 32px;">
+                  <td class="pad" style="padding:24px 24px 22px 24px;">
 
                     <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:11px; line-height:16px; font-weight:700; letter-spacing:2.2px; color:#8f1d15; text-transform:uppercase;">
                       UMich's first urban tech consultancy
@@ -181,27 +164,17 @@
             </td>
           </tr>
 
-          <!-- ============ FIRST CLUE ============ -->
+          <!-- ============ FOOTSTEPS ============ -->
           <tr>
-            <td class="pad" style="background:#8f1d15; padding:14px 28px 8px 28px;">
-              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#fdf3d4; border:1px solid #c9a227;">
-                <tr>
-                  <td style="padding:18px 22px; border-left:5px solid #c9a227;">
-                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:11px; line-height:16px; font-weight:700; letter-spacing:2px; color:#8f1d15; text-transform:uppercase;">
-                      Your first clue
-                    </div>
-                    <div class="serif" style="font-family:Georgia,'Times New Roman',serif; font-size:17px; line-height:26px; color:#1c1613; margin-top:6px;">
-                      Four chances to find us. You only need to attend <strong>one Mass Meeting</strong> — whichever fits your schedule.
-                    </div>
-                  </td>
-                </tr>
-              </table>
+            <td style="background:#8f1d15; padding:8px 0 0 0; font-size:0; line-height:0;">
+              <img src="https://cdn.jsdelivr.net/gh/arjuns30/urb-f26@main/assets/footsteps.jpg" width="560" alt=""
+                   style="display:block; width:100%; max-width:100%; height:auto; border:0;">
             </td>
           </tr>
 
           <!-- ============ THE CASE FILE / EVENTS ============ -->
           <tr>
-            <td class="pad" style="background:#8f1d15; padding:30px 28px 4px 28px;">
+            <td class="pad" style="background:#8f1d15; padding:24px 22px 4px 22px;">
               <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:11px; line-height:16px; font-weight:700; letter-spacing:2.4px; color:#f4e3a1; text-transform:uppercase;">
                 The case file
               </div>
@@ -209,17 +182,17 @@
                 Where to find URB
               </div>
               <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:14px; line-height:22px; color:#f7dcd6; margin-top:8px;">
-                Four sightings. Central Campus Festifall is the big one.
+                Four sightings. You only need to attend one Mass Meeting.
               </div>
             </td>
           </tr>
 
           <!-- CLUE 01 -->
           <tr>
-            <td class="pad" style="background:#8f1d15; padding:16px 28px 0 28px;">
+            <td class="pad" style="background:#8f1d15; padding:14px 22px 0 22px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#f6f1e7;">
                 <tr>
-                  <td class="datebox" width="108" valign="middle" align="center" style="width:108px; background:#171310; padding:18px 10px;">
+                  <td class="datebox" width="80" valign="middle" align="center" style="width:80px; background:#171310; padding:18px 10px;">
                     <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.6px; color:#c9a227;">MON</div>
                     <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:25px; line-height:30px; font-weight:800; color:#ffffff; margin-top:3px;">8/31</div>
                   </td>
@@ -234,17 +207,39 @@
             </td>
           </tr>
 
-          <!-- CLUE 02 · MAIN EVENT -->
+          <!-- CLUE 02 -->
           <tr>
-            <td class="pad" style="background:#8f1d15; padding:12px 28px 0 28px;">
+            <td class="pad" style="background:#8f1d15; padding:10px 22px 0 22px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#f6f1e7;">
+                <tr>
+                  <td class="datebox" width="80" valign="middle" align="center" style="width:80px; background:#171310; padding:18px 10px;">
+                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.6px; color:#c9a227;">WED</div>
+                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:25px; line-height:30px; font-weight:800; color:#ffffff; margin-top:3px;">9/2</div>
+                  </td>
+                  <td valign="middle" style="padding:16px 20px;">
+                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.6px; color:#a08a5a; text-transform:uppercase;">Clue 02</div>
+                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:17px; line-height:23px; font-weight:700; color:#1c1613; margin-top:3px;">Central Campus Festifall</div>
+                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:14px; line-height:21px; color:#5c5148; margin-top:3px;">
+                      3:00–5:00 PM &nbsp;·&nbsp; The Diag &nbsp;·&nbsp; <strong style="font-weight:700;">Table C-44</strong>
+                    </div>
+                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:13px; line-height:19px; font-weight:500; color:#8f1d15; margin-top:6px;">Our biggest recruiting event of the term.</div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- MASS MEETINGS · attend one -->
+          <tr>
+            <td class="pad" style="background:#8f1d15; padding:10px 22px 0 22px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#c9a227;">
                 <tr>
                   <td style="padding:4px;">
                     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#fdf3d4;">
                       <tr>
-                        <td align="center" style="background:#c9a227; padding:6px 10px;">
-                          <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:800; letter-spacing:2.4px; color:#171310; text-transform:uppercase;">
-                            &#9733; &nbsp;The main event&nbsp; &#9733;
+                        <td align="center" style="background:#c9a227; padding:8px 12px;">
+                          <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:800; letter-spacing:1.6px; color:#171310; text-transform:uppercase;">
+                            You only need to attend one
                           </div>
                         </td>
                       </tr>
@@ -252,17 +247,34 @@
                         <td>
                           <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
                             <tr>
-                              <td class="datebox" width="108" valign="middle" align="center" style="width:108px; background:#8f1d15; padding:20px 10px;">
-                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.6px; color:#f4e3a1;">WED</div>
-                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:25px; line-height:30px; font-weight:800; color:#ffffff; margin-top:3px;">9/2</div>
+                              <td class="datebox" width="80" valign="middle" align="center" style="width:80px; background:#8f1d15; padding:18px 10px;">
+                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.6px; color:#f4e3a1;">FRI</div>
+                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:25px; line-height:30px; font-weight:800; color:#ffffff; margin-top:3px;">9/4</div>
                               </td>
                               <td valign="middle" style="padding:16px 20px;">
-                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.6px; color:#8f1d15; text-transform:uppercase;">Clue 02</div>
-                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:19px; line-height:25px; font-weight:800; color:#1c1613; margin-top:3px;">Central Campus Festifall</div>
-                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:15px; line-height:22px; color:#1c1613; margin-top:4px;">
-                                  3:00–5:00 PM &nbsp;·&nbsp; The Diag &nbsp;·&nbsp; <strong style="font-weight:800;">Table C-44</strong>
-                                </div>
-                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:13px; line-height:19px; font-weight:500; color:#8f1d15; margin-top:6px;">Our biggest recruiting event of the term.</div>
+                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.6px; color:#8f1d15; text-transform:uppercase;">Clue 03</div>
+                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:17px; line-height:23px; font-weight:700; color:#1c1613; margin-top:3px;">Mass Meeting #1</div>
+                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:14px; line-height:21px; color:#5c5148; margin-top:3px;">5:00–7:00 PM &nbsp;·&nbsp; North Quad 2255</div>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="height:1px; background:#c9a227; font-size:0; line-height:0;">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
+                            <tr>
+                              <td class="datebox" width="80" valign="middle" align="center" style="width:80px; background:#8f1d15; padding:18px 10px;">
+                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.6px; color:#f4e3a1;">TUE</div>
+                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:25px; line-height:30px; font-weight:800; color:#ffffff; margin-top:3px;">9/8</div>
+                              </td>
+                              <td valign="middle" style="padding:16px 20px;">
+                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.6px; color:#8f1d15; text-transform:uppercase;">Clue 04</div>
+                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:17px; line-height:23px; font-weight:700; color:#1c1613; margin-top:3px;">Mass Meeting #2</div>
+                                <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:14px; line-height:21px; color:#5c5148; margin-top:3px;">6:00–8:00 PM &nbsp;·&nbsp; North Quad 2255</div>
                               </td>
                             </tr>
                           </table>
@@ -275,51 +287,15 @@
             </td>
           </tr>
 
-          <!-- CLUE 03 -->
-          <tr>
-            <td class="pad" style="background:#8f1d15; padding:12px 28px 0 28px;">
-              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#f6f1e7;">
-                <tr>
-                  <td class="datebox" width="108" valign="middle" align="center" style="width:108px; background:#171310; padding:18px 10px;">
-                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.6px; color:#c9a227;">FRI</div>
-                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:25px; line-height:30px; font-weight:800; color:#ffffff; margin-top:3px;">9/4</div>
-                  </td>
-                  <td valign="middle" style="padding:16px 20px;">
-                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.6px; color:#a08a5a; text-transform:uppercase;">Clue 03</div>
-                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:17px; line-height:23px; font-weight:700; color:#1c1613; margin-top:3px;">Mass Meeting #1</div>
-                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:14px; line-height:21px; color:#5c5148; margin-top:3px;">5:00–7:00 PM &nbsp;·&nbsp; North Quad 2255</div>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
-          <!-- CLUE 04 -->
-          <tr>
-            <td class="pad" style="background:#8f1d15; padding:12px 28px 0 28px;">
-              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#f6f1e7;">
-                <tr>
-                  <td class="datebox" width="108" valign="middle" align="center" style="width:108px; background:#171310; padding:18px 10px;">
-                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.6px; color:#c9a227;">TUE</div>
-                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:25px; line-height:30px; font-weight:800; color:#ffffff; margin-top:3px;">9/8</div>
-                  </td>
-                  <td valign="middle" style="padding:16px 20px;">
-                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:14px; font-weight:700; letter-spacing:1.6px; color:#a08a5a; text-transform:uppercase;">Clue 04</div>
-                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:17px; line-height:23px; font-weight:700; color:#1c1613; margin-top:3px;">Mass Meeting #2</div>
-                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:14px; line-height:21px; color:#5c5148; margin-top:3px;">6:00–8:00 PM &nbsp;·&nbsp; North Quad 2255</div>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
           <!-- ============ CTA + QR ============ -->
           <tr>
-            <td class="pad" style="background:#8f1d15; padding:22px 28px 28px 28px;">
+            <td class="pad" style="background:#8f1d15; padding:18px 22px 22px 22px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#171310;">
                 <tr>
                   <td class="pad" align="center" style="padding:30px 32px 28px 32px;">
 
+                    <img class="mag" src="https://cdn.jsdelivr.net/gh/arjuns30/urb-f26@main/assets/mag-glass.png" width="48" alt=""
+                         style="display:block; width:48px; height:auto; border:0; margin:0 auto 12px auto;">
                     <div class="serif" style="font-family:Georgia,'Times New Roman',serif; font-size:22px; line-height:30px; font-style:italic; color:#f4e3a1;">
                       Think you've cracked the case?
                     </div>
@@ -342,7 +318,7 @@
                       <tr>
                         <td class="stack" width="88" align="center" valign="middle" style="width:88px; padding:0 16px 0 0;">
                           <a href="https://forms.gle/Tk4Brht3g8unLuec9" target="_blank" style="text-decoration:none;">
-                            <img src="assets/urb-qr.png" width="88" height="88" alt="Scan for the URB interest form"
+                            <img src="https://cdn.jsdelivr.net/gh/arjuns30/urb-f26@main/assets/urb-qr.png" width="88" height="88" alt="Scan for the URB interest form"
                                  style="display:block; width:88px; height:88px; border:4px solid #ffffff; outline:none;">
                           </a>
                         </td>
@@ -363,7 +339,7 @@
 
           <!-- ============ THE EVIDENCE WALL (framed photos) ============ -->
           <tr>
-            <td class="pad" style="background:#8f1d15; padding:6px 28px 4px 28px;">
+            <td class="pad" style="background:#8f1d15; padding:6px 22px 4px 22px;">
               <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:11px; line-height:16px; font-weight:700; letter-spacing:2.4px; color:#f4e3a1; text-transform:uppercase;">
                 The evidence wall
               </div>
@@ -377,7 +353,7 @@
           </tr>
 
           <tr>
-            <td class="pad" style="background:#8f1d15; padding:18px 28px 0 28px;">
+            <td class="pad" style="background:#8f1d15; padding:14px 22px 0 22px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
                 <tr>
 
@@ -389,21 +365,8 @@
                           <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#171310;">
                             <tr>
                               <td style="padding:3px; font-size:0; line-height:0;">
-
-                                <!-- PHOTO B · display 244px wide · export 700x520
-                                     REPLACE the inner <td> with:
-                                     <img src="https://YOURUSER.github.io/REPO/assets/jpmc.jpg" width="244" alt="JPMorganChase NYC HQ visit"
-                                          style="display:block; width:100%; max-width:244px; height:auto; border:0;">
-                                -->
-                                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
-                                  <tr>
-                                    <td height="150" align="center" valign="middle" style="height:150px; background:#efe7d8; border:2px dashed #b9a06a;">
-                                      <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:11px; line-height:16px; font-weight:600; letter-spacing:1.6px; color:#8a7440; text-transform:uppercase;">Photo B</div>
-                                      <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:15px; color:#a89468; margin-top:3px;">700 × 520</div>
-                                    </td>
-                                  </tr>
-                                </table>
-
+                                <img src="https://cdn.jsdelivr.net/gh/arjuns30/urb-f26@main/assets/jpmc.jpg" width="246" alt="JPMorganChase NYC HQ visit"
+                                     style="display:block; width:100%; max-width:100%; height:auto; border:0;">
                               </td>
                             </tr>
                           </table>
@@ -429,21 +392,8 @@
                           <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#171310;">
                             <tr>
                               <td style="padding:3px; font-size:0; line-height:0;">
-
-                                <!-- PHOTO C · display 244px wide · export 700x520
-                                     REPLACE the inner <td> with:
-                                     <img src="https://YOURUSER.github.io/REPO/assets/newlab.jpg" width="244" alt="Newlab Brooklyn visit"
-                                          style="display:block; width:100%; max-width:244px; height:auto; border:0;">
-                                -->
-                                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
-                                  <tr>
-                                    <td height="150" align="center" valign="middle" style="height:150px; background:#efe7d8; border:2px dashed #b9a06a;">
-                                      <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:11px; line-height:16px; font-weight:600; letter-spacing:1.6px; color:#8a7440; text-transform:uppercase;">Photo C</div>
-                                      <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:15px; color:#a89468; margin-top:3px;">700 × 520</div>
-                                    </td>
-                                  </tr>
-                                </table>
-
+                                <img src="https://cdn.jsdelivr.net/gh/arjuns30/urb-f26@main/assets/newlab.jpg" width="246" alt="Newlab Brooklyn visit"
+                                     style="display:block; width:100%; max-width:100%; height:auto; border:0;">
                               </td>
                             </tr>
                           </table>
@@ -465,99 +415,46 @@
           </tr>
 
           <tr>
-            <td class="pad" style="background:#8f1d15; padding:14px 28px 0 28px;">
-              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
+            <td class="pad" style="background:#8f1d15; padding:12px 22px 0 22px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0"
+                     style="width:100%; background:#c9a227;">
                 <tr>
-
-                  <!-- FRAME D -->
-                  <td class="stack" width="48%" valign="top" style="width:48%;">
-                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#c9a227;">
+                  <td style="padding:6px;">
+                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#171310;">
                       <tr>
-                        <td style="padding:6px;">
-                          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#171310;">
-                            <tr>
-                              <td style="padding:3px; font-size:0; line-height:0;">
-
-                                <!-- PHOTO D · display 244px wide · export 700x520
-                                     REPLACE the inner <td> with:
-                                     <img src="https://YOURUSER.github.io/REPO/assets/detroit.jpg" width="244" alt="Newlab Detroit networking day"
-                                          style="display:block; width:100%; max-width:244px; height:auto; border:0;">
-                                -->
-                                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
-                                  <tr>
-                                    <td height="150" align="center" valign="middle" style="height:150px; background:#efe7d8; border:2px dashed #b9a06a;">
-                                      <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:11px; line-height:16px; font-weight:600; letter-spacing:1.6px; color:#8a7440; text-transform:uppercase;">Photo D</div>
-                                      <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:15px; color:#a89468; margin-top:3px;">700 × 520</div>
-                                    </td>
-                                  </tr>
-                                </table>
-
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center" style="background:#c9a227; padding:0 8px 8px 8px;">
-                          <div style="font-family:Georgia,'Times New Roman',serif; font-size:12px; line-height:17px; font-style:italic; color:#171310;">
-                            Newlab Detroit · W25
-                          </div>
+                        <td style="padding:3px; font-size:0; line-height:0;">
+                          <img src="https://cdn.jsdelivr.net/gh/arjuns30/urb-f26@main/assets/team.jpg" width="494" alt="URB Consulting team with the Block M"
+                               style="display:block; width:100%; max-width:100%; height:auto; border:0;">
                         </td>
                       </tr>
                     </table>
                   </td>
-
-                  <td class="spacer" width="4%" style="width:4%; font-size:0; line-height:0;">&nbsp;</td>
-
-                  <!-- FRAME E -->
-                  <td class="stack" width="48%" valign="top" style="width:48%;">
-                    <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#c9a227;">
-                      <tr>
-                        <td style="padding:6px;">
-                          <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#171310;">
-                            <tr>
-                              <td style="padding:3px; font-size:0; line-height:0;">
-
-                                <!-- PHOTO E · display 244px wide · export 700x520
-                                     REPLACE the inner <td> with:
-                                     <img src="https://YOURUSER.github.io/REPO/assets/social.jpg" width="244" alt="URB social event"
-                                          style="display:block; width:100%; max-width:244px; height:auto; border:0;">
-                                -->
-                                <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
-                                  <tr>
-                                    <td height="150" align="center" valign="middle" style="height:150px; background:#efe7d8; border:2px dashed #b9a06a;">
-                                      <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:11px; line-height:16px; font-weight:600; letter-spacing:1.6px; color:#8a7440; text-transform:uppercase;">Photo E</div>
-                                      <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:10px; line-height:15px; color:#a89468; margin-top:3px;">700 × 520</div>
-                                    </td>
-                                  </tr>
-                                </table>
-
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="center" style="background:#c9a227; padding:0 8px 8px 8px;">
-                          <div style="font-family:Georgia,'Times New Roman',serif; font-size:12px; line-height:17px; font-style:italic; color:#171310;">
-                            Socials &amp; project teams
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
+                </tr>
+                <tr>
+                  <td align="center" style="background:#c9a227; padding:0 8px 8px 8px;">
+                    <div style="font-family:Georgia,'Times New Roman',serif; font-size:12px; line-height:17px; font-style:italic; color:#171310;">
+                      The investigators · URB Consulting
+                    </div>
                   </td>
-
                 </tr>
               </table>
             </td>
           </tr>
 
+          <!-- ============ POLICE TAPE ============ -->
+          <tr>
+            <td style="background:#8f1d15; padding:18px 0 0 0; font-size:0; line-height:0;">
+              <img src="https://cdn.jsdelivr.net/gh/arjuns30/urb-f26@main/assets/police-tape.jpg" width="560" alt=""
+                   style="display:block; width:100%; max-width:100%; height:auto; border:0;">
+            </td>
+          </tr>
+
           <!-- ============ WHAT WE DO ============ -->
           <tr>
-            <td class="pad" style="background:#8f1d15; padding:28px 28px 8px 28px;">
+            <td class="pad" style="background:#8f1d15; padding:22px 22px 8px 22px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#f6f1e7;">
                 <tr>
-                  <td class="pad" style="padding:32px 32px 10px 32px;">
+                  <td class="pad" style="padding:24px 24px 10px 24px;">
                     <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:11px; line-height:16px; font-weight:700; letter-spacing:2.2px; color:#8f1d15; text-transform:uppercase;">
                       How we help
                     </div>
@@ -565,12 +462,12 @@
                       What we do
                     </div>
                     <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:15px; line-height:24px; color:#5c5148; margin-top:8px;">
-                      Client projects that build the interdisciplinary skills your career actually needs.
+                      Client projects that build the interdisciplinary skills your career needs. Add great internship adjacent resume material and learn through hands-on experiences.
                     </div>
                   </td>
                 </tr>
                 <tr>
-                  <td class="pad" style="padding:8px 32px 26px 32px;">
+                  <td class="pad" style="padding:8px 24px 22px 24px;">
                     <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%;">
                       <tr>
                         <td class="stack" width="48%" valign="top" style="width:48%; background:#ffffff; border:1px solid #e3dbcc; padding:16px;">
@@ -604,7 +501,7 @@
 
           <!-- ============ THE USUAL SUSPECTS ============ -->
           <tr>
-            <td class="pad" style="background:#8f1d15; padding:14px 28px 8px 28px;">
+            <td class="pad" style="background:#8f1d15; padding:12px 22px 8px 22px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#171310;">
                 <tr>
                   <td class="pad" style="padding:28px 32px 26px 32px;">
@@ -626,35 +523,14 @@
             </td>
           </tr>
 
-          <!-- ============ TESTIMONIAL ============ -->
-          <tr>
-            <td class="pad" style="background:#8f1d15; padding:8px 28px 8px 28px;">
-              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#fdf3d4; border:1px solid #c9a227;">
-                <tr>
-                  <td class="pad" style="padding:26px 30px;">
-                    <div class="serif" style="font-family:Georgia,'Times New Roman',serif; font-size:17px; line-height:27px; font-style:italic; color:#1c1613;">
-                      &ldquo;URB's culture of kindness paired with high expectations makes it the best filter for meeting genuinely interesting, capable people. Some of my closest friends at Michigan came from my project team.&rdquo;
-                    </div>
-                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:13px; line-height:19px; font-weight:600; color:#8f1d15; margin-top:14px;">
-                      Henry Parker
-                    </div>
-                    <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:12px; line-height:18px; color:#7a6c5e;">
-                      Urban Technology, 2029
-                    </div>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-
           <!-- ============ CLOSE ============ -->
           <tr>
-            <td class="pad" style="background:#8f1d15; padding:8px 28px 28px 28px;">
+            <td class="pad" style="background:#8f1d15; padding:8px 22px 22px 22px;">
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="width:100%; background:#f6f1e7;">
                 <tr>
                   <td class="pad" align="center" style="padding:30px 32px;">
                     <div class="serif" style="font-family:Georgia,'Times New Roman',serif; font-size:20px; line-height:28px; font-style:italic; color:#1c1613;">
-                      One last clue: we'd love to meet you.
+                      We'd love to meet you.
                     </div>
                     <div style="font-family:Inter,'Helvetica Neue',Arial,sans-serif; font-size:15px; line-height:24px; color:#3d332d; margin:10px 0 20px 0;">
                       Questions? Just reply to this email. We hope to see you rush URB.
@@ -682,6 +558,14 @@
             </td>
           </tr>
 
+          <!-- ============ POLICE TAPE (close) ============ -->
+          <tr>
+            <td style="background:#8f1d15; padding:0; font-size:0; line-height:0;">
+              <img src="https://cdn.jsdelivr.net/gh/arjuns30/urb-f26@main/assets/police-tape.jpg" width="560" alt=""
+                   style="display:block; width:100%; max-width:100%; height:auto; border:0;">
+            </td>
+          </tr>
+
           <!-- ============ FOOTER ============ -->
           <tr>
             <td class="pad" align="center" style="background:#171310; padding:22px 32px;">
@@ -697,6 +581,9 @@
           </tr>
 
         </table>
+        <!--[if mso]>
+        </td></tr></table>
+        <![endif]-->
       </td>
     </tr>
   </table>
